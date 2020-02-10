@@ -14,11 +14,11 @@
     "start:dev": "webpack-dev-server --mode development"
   },
   "dependencies": {
-    "azure-devops-extension-api": "^1.152.0",
-    "azure-devops-extension-sdk": "^2.0.7",
-    "azure-devops-ui": "^1.152.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "azure-devops-extension-api": "~1.157.0",
+    "azure-devops-extension-sdk": "~2.0.11",
+    "azure-devops-ui": "~2.164.0",
+    "react": "~16.8.1",
+    "react-dom": "~16.8.1"
   },
   "devDependencies": {
     "@types/react": "^16.8.18",

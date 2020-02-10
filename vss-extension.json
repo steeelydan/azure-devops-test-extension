@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "name": "My Extension",
   "description": "Use hot reload and debug directly in VS Code",
   "publisher": "steeelydan",
@@ -48,7 +48,7 @@
       "type": "ms.vss-web.hub",
       "targets": [".hello-world-hub-group"],
       "properties": {
-        "uri": "dist/hub/hub.html"
+        "uri": "dist/Hub/Hub.html"
       }
     }
   ]
