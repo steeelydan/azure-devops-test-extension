@@ -2,6 +2,8 @@
 
 This project is based on [https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug).
 
+It integrates components from [https://github.com/microsoft/azure-devops-extension-sample](https://github.com/microsoft/azure-devops-extension-sample).
+
 ## Development with Hot Reload
 - `npm install`
 - Increase version number in `vss-extension.json`
