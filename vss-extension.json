@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "version": "0.0.10",
+  "version": "0.0.11",
   "name": "My Extension",
   "description": "Use hot reload and debug directly in VS Code",
   "publisher": "steeelydan",
