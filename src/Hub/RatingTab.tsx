@@ -12,15 +12,15 @@ import { Toast } from 'azure-devops-ui/Toast';
 
 import SliderInput from './SliderInput';
 
-export interface IRatingTabState {
-    carRating: carRating;
+export interface RatingTabState {
+    carRating: CarRating;
     ready: boolean;
     isToastVisible: boolean;
     isToastFadingOut: boolean;
     message: string;
 }
 
-type carRating = {
+type CarRating = {
     id: string;
     speed: number;
     handling: number;
@@ -34,7 +34,7 @@ const emptyRating = {
     looks: 0
 };
 
-export class RatingTab extends React.Component<{}, IRatingTabState> {
+export class RatingTab extends React.Component<{}, RatingTabState> {
     private _dataManager?: IExtensionDataManager;
     private toastRef: React.RefObject<Toast> = React.createRef<Toast>();
 
