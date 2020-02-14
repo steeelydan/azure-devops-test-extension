@@ -13,6 +13,8 @@ import { OverviewTab } from "./OverviewTab";
 import { NavigationTab } from "./NavigationTab";
 import { ExtensionDataTab } from "./ExtensionDataTab";
 import { MessagesTab } from "./MessagesTab";
+import { RatingTab } from "./RatingTab";
+
 import { showRootComponent } from "../Common";
 
 interface IHubContentState {
@@ -60,6 +62,7 @@ class HubContent extends React.Component<{}, IHubContentState> {
                     <Tab name="Navigation" id="navigation" />
                     <Tab name="Extension Data" id="extensionData" />
                     <Tab name="Messages" id="messages" />
+                    <Tab name="RatingTab" id="rating" />
                 </TabBar>
 
                 { this.getPageContent() }
@@ -86,6 +89,9 @@ class HubContent extends React.Component<{}, IHubContentState> {
         }
         else if (selectedTabId === "messages") {
             return <MessagesTab />;
+        }
+        else if (selectedTabId === "rating") {
+            return <RatingTab />;
         }
     }
 
