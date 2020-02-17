@@ -20,7 +20,7 @@ export interface RatingTabState {
     message: string;
 }
 
-type CarRating = {
+interface CarRating {
     id: string;
     speed: number;
     handling: number;
