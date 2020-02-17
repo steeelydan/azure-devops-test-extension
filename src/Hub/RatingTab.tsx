@@ -18,6 +18,7 @@ export interface RatingTabState {
     isToastVisible: boolean;
     isToastFadingOut: boolean;
     message: string;
+    toastTimeout?: number;
 }
 
 interface CarRating {
@@ -25,7 +26,7 @@ interface CarRating {
     speed: number;
     handling: number;
     looks: number;
-};
+}
 
 const emptyRating = {
     id: '',
@@ -51,6 +52,12 @@ export class RatingTab extends React.Component<{}, RatingTabState> {
 
     public componentDidMount() {
         this.initializeState();
+    }
+
+    public componentWillUnmount() {
+        if (this.state.toastTimeout) {
+            clearTimeout(this.state.toastTimeout);
+        }
     }
 
     private async initializeState(): Promise<void> {
@@ -241,7 +248,7 @@ export class RatingTab extends React.Component<{}, RatingTabState> {
 
         this.setState({ isToastVisible: true });
 
-        setTimeout(() => {
+        const toastTimeout = setTimeout(() => {
             this.setState({ isToastFadingOut: true });
 
             this.toastRef.current!.fadeOut().promise.then(() => {
@@ -251,5 +258,9 @@ export class RatingTab extends React.Component<{}, RatingTabState> {
                 });
             });
         }, 2000);
+
+        this.setState({
+            toastTimeout: toastTimeout
+        });
     };
 }
