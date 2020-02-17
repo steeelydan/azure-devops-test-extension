@@ -260,7 +260,7 @@ export class RatingTab extends React.Component<{}, RatingTabState> {
         }, 2000);
 
         this.setState({
-            toastTimeout: toastTimeout
+            toastTimeout
         });
     };
 }
