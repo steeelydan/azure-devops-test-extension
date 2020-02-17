@@ -12,7 +12,7 @@ import { Toast } from 'azure-devops-ui/Toast';
 
 import SliderInput from './SliderInput';
 
-export interface RatingTabState {
+interface RatingTabState {
     carRating: CarRating;
     ready: boolean;
     isToastVisible: boolean;
