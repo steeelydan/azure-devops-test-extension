@@ -12,7 +12,7 @@ import { Toast } from 'azure-devops-ui/Toast';
 
 import SliderInput from './SliderInput';
 
-interface RatingTabState {
+type RatingTabState = {
     carRating: CarRating;
     ready: boolean;
     isToastVisible: boolean;
@@ -21,7 +21,7 @@ interface RatingTabState {
     toastTimeout?: number;
 }
 
-interface CarRating {
+type CarRating = {
     id: string;
     speed: number;
     handling: number;

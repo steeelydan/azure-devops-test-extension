@@ -17,7 +17,7 @@ import { RatingTab } from "./RatingTab";
 
 import { showRootComponent } from "../Common";
 
-interface IHubContentState {
+type HubContentState = {
     selectedTabId: string;
     fullScreenMode: boolean;
     headerDescription?: string;
@@ -25,7 +25,7 @@ interface IHubContentState {
     useCompactPivots?: boolean;
 }
 
-class HubContent extends React.Component<{}, IHubContentState> {
+class HubContent extends React.Component<{}, HubContentState> {
 
     constructor(props: {}) {
         super(props);
