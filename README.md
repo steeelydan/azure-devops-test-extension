@@ -1,4 +1,7 @@
-# My Readme
+PLEASE NOTE: I don't update this repository anymore and do not merge dependabot security PRs anymore. If you ever clone it, please perform the relevant updates. 
+
+
+# Readme
 
 This project is based on [https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug](https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug).
 
